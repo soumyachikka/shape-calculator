@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Shape Calculator</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+	  <div class="left-div"> 
+	  <p>IT is a shape calculator.Use to calculate the area that you would like to calculate.<br>
+		 IT is a shape calculator.Use to calculate the area that you would like to calculate.<br>
+		 IT is a shape calculator.Use to calculate the area that you would like to calculate.<br>
+		 IT is a shape calculator.Use to calculate the area that you would like to calculate.<br>
+		 IT is a shape calculator.Use to calculate the area that you would like to calculate.<br>
+		 IT is a shape calculator.Use to calculate the area that you would like to calculate.<br>
+		 IT is a shape calculator.Use to calculate the area that you would like to calculate.<br>
+		 IT is a shape calculator.Use to calculate the area that you would like to calculate.
+	  </p>
+	  </div>
+      <div class="right-div">
+      <h1 id="title">Step 1 : Select claculator shape</h1>
+      <div id="header">Select the shape that would like to calculate the area  and press the button "Go to step 2"</div>
+      <div class="selector" id="selector">
+          <div class="btn-div">
+      <input type="radio" id="0" name="shape" value="Rectangle" checked>
+      <label for="rectangle">Rectangle</label>
+      </div>
+      <div class="btn-div">
+      <input type="radio" id="1" name="shape" value="Circle">
+      <label for="circle">Circle</label></div>
+      <div class="btn-div">
+      <input type="radio" id="2" name="shape" value="Sqaure">
+      <label for="sqaure">Sqaure</label></div>
+      <div class="btn-div">
+      <input type="radio" id="3" name="shape" value="Ellipse">
+      <label for="ellipse">Ellipse</label></div>
+    </div>
+    <div id="rectangle" style="display: none;margin: 0 auto;" class="input_div">
+      <label for="rectangle">Length:</label>
+      <input type="number" name="shapeValue" id="rectanglelength"/>
+      <br/>
+      <br/>
+      <label for="rectangle">Breadth:</label>
+      <input type="number" name="shapeSelectedValue" id="rectanglebreadth"/>
+    </div>
+    <div id="circle" style="display: none;margin: 0 auto;" class="input_div">
+      <label for="circle">Diameter:</label>
+      <input type="number" name="shapeValue" id="circlelength"/>
+    </div>
+    <div id="sqaure" style="display: none;margin: 0 auto;" class="input_div">
+      <label for="Sqaure">Side:</label>
+      <input type="number" name="shapeValue" id="sqaurelength"/>
+    </div>
+    <div id="ellipse" style="display: none;margin: 0 auto;" class="input_div">
+      <label for="Ellipse">Major Axis:</label>
+      <input type="number" name="shapeValue" id="ellipselength"/>
+      <br/>
+      <br/>
+      <label for="Ellipse">Minor Axis:</label>
+      <input type="number" name="shapeSelectedValue" id="ellipsebreadth"/>
+    </div>
+    <h1 id="area" style="display: none;" ></h1>
+    <button class="btn" id="step1" onClick="gotoStep2()"> Go to Step2</button>
+    <button class="btn" id="step2" onClick="gotoStep3()" style="display: none;margin: 0 auto;" > Go to Step3</button>
+    <button class="btn" id="step3" onClick="gotoStep1()" style="display: none;margin: 0 auto;">Start Over</button>
+    </div>
+      <script type="text/javascript"  src="index.js"></script>
+</body>
+
+  </html>
