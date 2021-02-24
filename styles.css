@@ -1,0 +1,12 @@
+.container {
+    width: 300px;
+    border: 1px solid #000000;
+    padding: 12px;
+    margin: auto;
+}
+
+#showInputs > input {
+    width: 96%;
+    padding: 4px;
+    margin: 12px 0px;
+}
